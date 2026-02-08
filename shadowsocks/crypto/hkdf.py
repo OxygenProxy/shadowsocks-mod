@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
 # Void Copyright NO ONE
@@ -13,8 +13,8 @@
 
 from __future__ import division
 
-import hmac
 import hashlib
+import hmac
 import sys
 
 if sys.version_info[0] == 3:

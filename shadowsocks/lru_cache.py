@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
 # Copyright 2015 clowwindy
@@ -15,8 +15,7 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-from __future__ import absolute_import, division, print_function, \
-    with_statement
+from __future__ import absolute_import, division, print_function, with_statement
 
 import collections
 import logging
@@ -48,7 +47,7 @@ except:
 SWEEP_MAX_ITEMS = 1024
 
 
-class LRUCache(collections.MutableMapping):
+class LRUCache(collections.abc.MutableMapping):
     """This class is not thread safe"""
 
     def __init__(self, timeout=60, close_callback=None, *args, **kwargs):

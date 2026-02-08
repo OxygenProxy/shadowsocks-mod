@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
 # Copyright 2013-2015 clowwindy
@@ -17,17 +17,16 @@
 
 from __future__ import absolute_import, division, print_function, with_statement
 
+import binascii
+import hashlib
+import logging
+import random
+import re
 import socket
 import struct
-import logging
-import binascii
-import re
-import hashlib
-import random
-from configloader import load_config, get_config
 
+from configloader import get_config, load_config
 from shadowsocks import lru_cache
-
 
 def compat_ord(s):
     if isinstance(s, int):
@@ -147,7 +146,7 @@ def match_ipv6_address(text):
 
 
 def match_regex(regex, text):
-    if re.search(regex, text):
+    if re.search(regex, text[:256]):
         return True
     return False
 

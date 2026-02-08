@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
 # Copyright 2016 breakwa11
@@ -16,4 +16,4 @@
 # under the License.
 
 def version():
-    return '3.4.0 mod by esdeathlove'
+    return '3.5.1'

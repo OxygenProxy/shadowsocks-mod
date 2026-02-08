@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
 # Copyright 2014-2015 clowwindy
@@ -15,14 +15,14 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-from __future__ import absolute_import, division, print_function, \
-    with_statement
+from __future__ import absolute_import, division, print_function, with_statement
 
-import os
-import sys
 import logging
+import os
 import signal
+import sys
 import time
+
 from shadowsocks import common, shell
 
 # this module is ported from ShadowVPN daemon.c

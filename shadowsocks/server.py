@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
 # Copyright 2015 clowwindy
@@ -15,13 +15,12 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-from __future__ import absolute_import, division, print_function, \
-    with_statement
+from __future__ import absolute_import, division, print_function, with_statement
 
-import sys
-import os
 import logging
+import os
 import signal
+import sys
 
 if __name__ == '__main__':
     import inspect
